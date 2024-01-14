@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(0, 170, 170);
+            color: #eef2f5;
+            font: normal 17pt verdana;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div class="msg">Clique aqui</div>
+
+    <script>
+        /*
+        Selecionando elementos por
+        por Marca
+        por ID
+        por nome
+        por Classe
+        por Seletor
+        */
+
+        // Por marca
+
+        /*
+        var p1 = window.document.getElementsByTagName ('p')[0]
+        window.document.write ('Esta escrito assim: ' + p1.innerText)
+        */
+
+        //Diferença entre innerText e innerHTM
+        
+        /*
+        var p1 = window.document.getElementsByTagName ('p')[1]
+        window.document.write ('Esta escrito assim: ' + p1.innerHTML)*/
+
+        /*
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName ('p')[0]
+        window.document.write ('Esta escrito assim: ' + p1.innerText)
+        corpo.style.background = 'gray'
+        p1.style.color = 'blue'
+        */
+       
+        //Por ID
+
+        /*
+        var div = window.document.getElementById('msg')
+        div.style.background = 'black'
+        //div.innerHTML = ('Não clique aqui')
+        window.document.getElementById('msg').innerText = ('Não clique aqui')
+        */
+
+        //Por nome
+        /*var div = window.document.getElementsByName ('msg')[0]
+        div.innerText = 'Não click aqui'*/
+
+        //Por class, mesma  
+        
+
+        // Por seletor
+
+        var d = window.document.querySelector('div.msg')
+        d.style.color = 'blue'
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Calculo IMC do usuário</title>
+</head>
+<body>
+    <p>Por favor informe sua altura:
+        <input type="number" name="altura" id="altura" min="100" max="250">
+    </p>
+    <p>Por favor informe o seu peso:
+        <input type="number" name="peso" id="peso" min="0" max="250">
+    </p>
+    <button onclick="IMC()">Verificar</button>
+    <div id="res" style="margin-top: 20px;">
+        Calculando...
+    </div>
+    <div>
+        <pre>
+            ***************************************************************
+            |    IMC          |          CATEGORIA                        |
+            |-------------------------------------------------------------|
+            | Até 18,5        |  Abaixo do peso                           |
+            | De  18,5 - 24,9 |  Saudável                                 |
+            | De  25,0 - 29,9 |  Sobrepeso                                |
+            | De  30,0 - 39,9 |  Obeso                                    |
+            | Acima de 40     |  Extremo ou alto risco de obesidade       |
+            ***************************************************************
+       </pre>
+</div>
+</body>
+</html>
